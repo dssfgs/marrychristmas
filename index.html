@@ -1,0 +1,88 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HKDSE 數學 | 科技備戰</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HKDSE 數學<span class="tech-glow">⚡</span></div>
+    <nav>
+      <a href="index.html" class="active">首頁</a>
+      <a href="products.html">產品介紹</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 輪播區塊 -->
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <div class="carousel-slide fade">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='500' viewBox='0 0 1200 500'%3E%3Crect width='1200' height='500' fill='%230a1120'/%3E%3Ctext x='600' y='260' font-family='Arial' font-size='60' fill='%2300e5ff' text-anchor='middle'%3EHKDSE 數學 核心攻略%3C/text%3E%3Ctext x='600' y='340' font-family='Arial' font-size='24' fill='%23b0e0ff' text-anchor='middle'%3E科技思維 · 精準備戰%3C/text%3E%3C/svg%3E" alt="HKDSE 數學核心攻略">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='500' viewBox='0 0 1200 500'%3E%3Crect width='1200' height='500' fill='%23121e33'/%3E%3Ctext x='600' y='260' font-family='Arial' font-size='60' fill='%2300ccff' text-anchor='middle'%3E互動式練習系統%3C/text%3E%3Ctext x='600' y='340' font-family='Arial' font-size='24' fill='%23a0d0ff' text-anchor='middle'%3E即時反饋 · 弱點分析%3C/text%3E%3C/svg%3E" alt="互動式練習系統">
+        </div>
+        <div class="carousel-slide fade">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='500' viewBox='0 0 1200 500'%3E%3Crect width='1200' height='500' fill='%230a1a2e'/%3E%3Ctext x='600' y='260' font-family='Arial' font-size='60' fill='%2300d4ff' text-anchor='middle'%3E模擬試題 + AI 診斷%3C/text%3E%3Ctext x='600' y='340' font-family='Arial' font-size='24' fill='%23b0e0ff' text-anchor='middle'%3E個人化提升方案%3C/text%3E%3C/svg%3E" alt="模擬試題與AI診斷">
+        </div>
+        <!-- 輪播按鈕 -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <!-- 圓點指示器 -->
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!-- 主視覺與按鈕 -->
+    <section class="hero">
+      <h1 class="tech-title">用科技<span class="glow-text">解鎖</span>數學潛能</h1>
+      <p class="subtitle">專為 HKDSE 考生設計的智能備戰平台 — 精準、高效、互動</p>
+      <button id="promoBtn" class="cta-btn">🎁 領取限時優惠</button>
+    </section>
+
+    <!-- 特色卡片 -->
+    <section class="features">
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>數據驅動</h3>
+        <p>根據你的答題表現，動態調整學習路徑，聚焦弱點。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚙️</div>
+        <h3>智能練習</h3>
+        <p>數千道 HKDSE 風格題目，即時批改與詳解。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>模擬實戰</h3>
+        <p>完整模擬試卷 + 時間管理分析，熟悉真實節奏。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 HKDSE 數學 · 科技備戰平台</p>
+  </footer>
+
+  <!-- 優惠彈出視窗 -->
+  <div id="promoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>🎉 限時優惠</h2>
+      <p>輸入優惠碼 <strong>TECH2025</strong> 即享首月 7 折！</p>
+      <p class="small">優惠至 2025 年 12 月 31 日</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

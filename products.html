@@ -1,0 +1,90 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>產品介紹 | HKDSE 數學</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HKDSE 數學<span class="tech-glow">⚡</span></div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="products.html" class="active">產品介紹</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1 class="tech-title">產品<span class="glow-text">介紹</span></h1>
+      <p class="subtitle">科技驅動的數學學習解決方案</p>
+    </section>
+
+    <section class="product-grid">
+      <!-- 產品卡片 1 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%230d1b2a'/%3E%3Ctext x='200' y='130' font-family='Arial' font-size='32' fill='%2300e5ff' text-anchor='middle'%3E智能練習%3C/text%3E%3C/svg%3E" alt="智能練習系統">
+        </div>
+        <h3>智能練習系統</h3>
+        <p class="product-desc">自適應難度、即時反饋、詳細步驟解析，覆蓋所有 HKDSE 數學課題。</p>
+        <ul class="feature-list">
+          <li>✅ 超過 5000 道題目</li>
+          <li>✅ 個人化弱點分析</li>
+          <li>✅ 離線練習模式</li>
+        </ul>
+        <button class="product-btn promo-trigger" data-product="智能練習系統">了解更多</button>
+      </div>
+
+      <!-- 產品卡片 2 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%2312233a'/%3E%3Ctext x='200' y='130' font-family='Arial' font-size='32' fill='%2300ccff' text-anchor='middle'%3E模擬試卷%3C/text%3E%3C/svg%3E" alt="模擬試卷">
+        </div>
+        <h3>全真模擬試卷</h3>
+        <p class="product-desc">參照最新 HKDSE 評核大綱設計，附計時功能與成績預測。</p>
+        <ul class="feature-list">
+          <li>✅ 10 套完整試卷</li>
+          <li>✅ 智能計時與提醒</li>
+          <li>✅ 分數趨勢追蹤</li>
+        </ul>
+        <button class="product-btn promo-trigger" data-product="全真模擬試卷">了解更多</button>
+      </div>
+
+      <!-- 產品卡片 3 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%230a1625'/%3E%3Ctext x='200' y='130' font-family='Arial' font-size='32' fill='%2300d4ff' text-anchor='middle'%3EAI 診斷%3C/text%3E%3C/svg%3E" alt="AI 診斷">
+        </div>
+        <h3>AI 學習診斷</h3>
+        <p class="product-desc">運用機器學習分析你的作答模式，提供個人化提升建議。</p>
+        <ul class="feature-list">
+          <li>✅ 概念掌握度雷達圖</li>
+          <li>✅ 錯題關聯分析</li>
+          <li>✅ 每週學習報告</li>
+        </ul>
+        <button class="product-btn promo-trigger" data-product="AI 學習診斷">了解更多</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 HKDSE 數學 · 科技備戰平台</p>
+  </footer>
+
+  <!-- 優惠彈出視窗 -->
+  <div id="promoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>🎉 限時優惠</h2>
+      <p>輸入優惠碼 <strong>TECH2025</strong> 即享首月 7 折！</p>
+      <p class="small">優惠至 2025 年 12 月 31 日</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
